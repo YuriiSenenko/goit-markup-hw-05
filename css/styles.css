@@ -135,7 +135,7 @@ p {
 .site-nav .link-nav {
 	position: relative;
 	padding-top: 20px;
-	padding-bottom: 32px;
+	padding-bottom: 33px;
 	color: var(--title-color);
 	font-weight: 500;
 	font-size: 14px;
@@ -556,7 +556,7 @@ p {
 	padding: 63px 24px;
 	transform: translateY(100%);
 
-transition: transform 250ms var(--animation-timing);
+	transition: transform 250ms var(--animation-timing);
 }
 
 .project-link:hover .window-action {
@@ -564,7 +564,6 @@ transform: translateY(0);
 }
 
 .window-action-text {
-
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
