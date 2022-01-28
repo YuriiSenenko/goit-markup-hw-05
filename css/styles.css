@@ -38,6 +38,7 @@ ul {
 }
 a {
 	text-decoration: none;
+	
 }
 img {
 	display: block;
@@ -150,9 +151,7 @@ p {
 	color: var(--accent-color);
 }
 
-.current.link-nav::after {
-	transform: scaleX(1);
-}
+
 /* ---------- Подчеркивание меню ---------- */
 
 
@@ -173,6 +172,10 @@ p {
 }
 
 .link-nav:hover::after {
+	transform: scaleX(1);
+}
+
+.current.link-nav::after {
 	transform: scaleX(1);
 }
 
@@ -539,7 +542,7 @@ p {
 	transform: translateY(100%);
 	background-color: var(--bacground-activ-window);
 
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 250ms var(--animation-timing);
 }
 .project-link:hover .project-img::before {
 	transform: translateY(0);
@@ -553,7 +556,7 @@ p {
 	padding: 63px 24px;
 	transform: translateY(100%);
 
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform 250ms var(--animation-timing);
 }
 
 .project-link:hover .window-action {
