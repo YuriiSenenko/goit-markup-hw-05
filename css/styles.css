@@ -168,12 +168,12 @@ p {
 	background-color: var(--accent-color);
 
 	transform: scaleX(0);
-	transition: transform 250ms var(--animation-timing);
+	/* transition: transform 250ms var(--animation-timing); */
 }
 
-.link-nav:hover::after {
+/* .link-nav:hover::after {
 	transform: scaleX(1);
-}
+} */
 
 .current.link-nav::after {
 	transform: scaleX(1);
